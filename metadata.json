@@ -1,0 +1,7 @@
+{
+  "name": "FCAB Tag der offenen Türen",
+  "description": "Una presentación interactiva para el día de puertas abiertas de la Fundación Colombo Alemana de Barranquilla, con audio integrado y guías de pronunciación.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
