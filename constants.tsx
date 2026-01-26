@@ -1,3 +1,4 @@
+
 import { SlideData } from './types';
 
 export const SLIDES: SlideData[] = [
@@ -43,7 +44,7 @@ export const SLIDES: SlideData[] = [
       { 
         german: "Guten Abend", 
         spanish: "Buenas noches (llegada)", 
-        image: "https://images.unsplash.com/photo-1470252649358-96957c053e9a?auto=format&fit=crop&q=80&w=400&h=300" 
+        image: "https://images.unsplash.com/photo-1507502707541-f369a3b18502?auto=format&fit=crop&q=80&w=400&h=300" 
       },
       { 
         german: "Gute Nacht", 
@@ -95,7 +96,7 @@ export const SLIDES: SlideData[] = [
       { 
         german: "Zapp: Links", 
         spanish: "", 
-        image: "https://images.unsplash.com/photo-1494801819652-1ca9fe1315ce?auto=format&fit=crop&q=80&w=200&h=200" 
+        image: "https://images.unsplash.com/photo-1501503060443-ef4ed4cd09d7?auto=format&fit=crop&q=80&w=200&h=200" 
       },
       { 
         german: "Zipp-Zapp!", 
@@ -112,7 +113,7 @@ export const SLIDES: SlideData[] = [
     layout: 'dialogue',
     phrases: [
       { 
-        german: "Mein Name ist __________.", 
+        german: "Mein Name ist...", 
         spanish: "Mi nombre es...", 
         image: "https://images.unsplash.com/photo-1503437313881-503a91226402?auto=format&fit=crop&q=80&w=100&h=100" 
       },
@@ -133,23 +134,6 @@ export const SLIDES: SlideData[] = [
       }
     ],
     pronunciationTips: ["CH = j suave", "W = v dental"]
-  },
-  {
-    id: 8,
-    title: "Sprachen",
-    subtitle: "Idiomas",
-    layout: 'intro',
-    phrases: [
-      { 
-        german: "Ich spreche Englisch, Spanisch, Französisch und Deutsch.", 
-        spanish: "Yo hablo inglés, español, francés y alemán." 
-      },
-      { 
-        german: "Und du?", 
-        spanish: "¿Y tú?" 
-      }
-    ],
-    pronunciationTips: ["SCH = sh", "Z = ts"]
   },
   {
     id: 9,
