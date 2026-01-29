@@ -96,7 +96,7 @@ export const SLIDES: SlideData[] = [
       { 
         german: "Zapp: Links", 
         spanish: "", 
-        image: "https://images.unsplash.com/photo-1501503060443-ef4ed4cd09d7?auto=format&fit=crop&q=80&w=200&h=200" 
+        image: "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&q=80&w=200&h=200" 
       },
       { 
         german: "Zipp-Zapp!", 
@@ -136,8 +136,8 @@ export const SLIDES: SlideData[] = [
     pronunciationTips: ["CH = j suave", "W = v dental"]
   },
   {
-    id: 9,
-    title: "Palabras Internacionales",
+    id: 8,
+    title: "Internationale Wörter",
     subtitle: "¡Ya sabes alemán!",
     layout: 'interactive',
     phrases: [
@@ -165,6 +165,40 @@ export const SLIDES: SlideData[] = [
       { german: "Das Internet", spanish: "Internet" }
     ],
     pronunciationTips: ["J = y", "D final = t", "SCH = sh"]
+  },
+  {
+    id: 9,
+    title: "Deutsche Automarken",
+    subtitle: "Los carros más famosos",
+    layout: 'grid',
+    phrases: [
+      { 
+        german: "Mercedes-Benz", 
+        spanish: "Mercedes", 
+        image: "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=80&w=800&auto=format&fit=crop" 
+      },
+      { 
+        german: "BMW", 
+        spanish: "Bayerische Motoren Werke", 
+        image: "https://images.unsplash.com/photo-1555215695-3004980ad54e?q=80&w=800&auto=format&fit=crop" 
+      },
+      { 
+        german: "Audi", 
+        spanish: "Audi", 
+        image: "https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?q=80&w=800&auto=format&fit=crop" 
+      },
+      { 
+        german: "Volkswagen", 
+        spanish: "VW", 
+        image: "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?q=80&w=800&auto=format&fit=crop" 
+      },
+      { 
+        german: "Porsche", 
+        spanish: "Porsche", 
+        image: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=800&auto=format&fit=crop" 
+      }
+    ],
+    pronunciationTips: ["W = v dental", "V = f", "SCH = sh"]
   },
   {
     id: 10,

@@ -33,12 +33,12 @@ const App: React.FC = () => {
   const nextSlide = () => {
     if (currentSlideIndex < SLIDES.length - 1) {
       setCurrentSlideIndex(currentSlideIndex + 1);
-      // Reset quiz state when moving between slides
       setQuizIndex(0);
       setAnsweredGender(null);
       setExplanation(null);
       setQuizScore(0);
       setQuizFinished(false);
+      window.scrollTo(0, 0);
     }
   };
 
@@ -50,6 +50,7 @@ const App: React.FC = () => {
       setExplanation(null);
       setQuizScore(0);
       setQuizFinished(false);
+      window.scrollTo(0, 0);
     }
   };
 
@@ -60,6 +61,7 @@ const App: React.FC = () => {
     setExplanation(null);
     setQuizScore(0);
     setQuizFinished(false);
+    window.scrollTo(0, 0);
   };
 
   useEffect(() => {
@@ -374,10 +376,10 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col pt-4 pb-32 px-4 md:px-8 overflow-y-auto relative">
+    <div className="min-h-screen bg-gray-50 flex flex-col pt-4 pb-32 px-4 md:px-8 relative">
       <div className="fixed top-0 left-0 w-full h-2 bg-gradient-to-r from-black via-red-600 to-yellow-400 z-[100]"></div>
       
-      <div className="max-w-6xl mx-auto w-full flex justify-between items-center mb-6 md:mb-10">
+      <div className="max-w-6xl mx-auto w-full flex justify-between items-center mb-6 md:mb-10 flex-shrink-0">
         <button onClick={goToHome} className="flex items-center gap-2 font-black text-xl text-gray-900 group">
           <div className="bg-black text-white p-2 rounded-lg group-hover:bg-red-600 transition-colors shadow-lg">
             <Home className="w-5 h-5" />
@@ -391,7 +393,10 @@ const App: React.FC = () => {
             {SLIDES.map((_, i) => (
               <button 
                 key={i}
-                onClick={() => setCurrentSlideIndex(i)}
+                onClick={() => {
+                  setCurrentSlideIndex(i);
+                  window.scrollTo(0, 0);
+                }}
                 className={`h-2 w-6 rounded-full transition-all hover:bg-red-400 ${i === currentSlideIndex ? 'bg-red-600 w-10' : 'bg-gray-300'}`}
               />
             ))}
@@ -402,7 +407,7 @@ const App: React.FC = () => {
         </div>
       </div>
 
-      <main className="flex-1 max-w-6xl mx-auto w-full flex items-center justify-center py-4">
+      <main className="flex-grow max-w-6xl mx-auto w-full flex items-center justify-center py-4">
         {renderLayout()}
       </main>
 

@@ -17,8 +17,27 @@
   }
 }
 </script>
+<style>
+  /* Custom scrollbar to make it clearly visible */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  body {
+    scrollbar-gutter: stable;
+  }
+</style>
 </head>
-<body class="bg-gray-50 text-gray-900 font-sans h-screen overflow-hidden">
+<body class="bg-gray-50 text-gray-900 font-sans">
     <div id="root"></div>
 </body>
 </html>
